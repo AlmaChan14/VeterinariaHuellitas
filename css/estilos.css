@@ -1,0 +1,231 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+@font-face{
+			font-family: icomoon;
+			src: url(fuentes/IcoMoon-Free.ttf);
+			}
+body{
+	font-family: icomoon;
+}
+.menu{
+	margin-top: 2%;	
+}
+.navbar{
+	margin-top: 3px;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.5);
+	height: 72px;
+}
+.navbar li:hover{
+	background-color: #4db1e2;
+	transition:background 1s;
+	-webkit-transition:background 1s;
+}
+ul li{
+	text-align: center;
+	margin-top: -20px;
+	transition:margin 1s;
+	-webkit-transition:margin 1s;
+}
+.navbar ul li:hover{
+	margin-top: 0px;
+	transition:margin 1s;
+	-webkit-transition:margin 1s;
+}
+.huellita{
+	font-size: 30px;
+}
+.icono{
+	color: transparent;
+}
+.navbar li:hover .icono{
+	color: white;
+	transition:color 1s;
+	-webkit-transition:color 1s;
+}
+div .barras{
+	background-image: url('../gorra.jpg');
+}
+article {
+	color: white;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	text-align: center;
+}
+.cuadro1{
+	/*background-color: rgba(25,154,217,0.6); default*/
+	background-color: rgba(18,145,207,0.6);
+}
+.cuadro1:hover{
+	/*background-color: rgba(94,184,228,0.6); default*/
+	/*background-color: rgba(86,175,218,0.6);*/
+	background-color: rgba(17,105,148,0.6);
+	transition:background 1s;
+	-webkit-transition:background 1s;
+}
+.icono2{
+	font-size: 40px;
+}
+.iconofooter{
+	font-size: 20px;
+}
+.icono3{
+	background-color: rgba(18,145,207,0.6);
+	padding: 3%;
+	font-size: 15px;
+	color: white;
+	border: 4px solid white;
+}
+.cuadro1:hover .icono3{
+	background-color: rgba(86,175,218,0.6);
+	padding: 3%;
+	font-size: 15px;
+	color: white;
+	border: 4px solid white;
+	transition:background 1s;
+	-webkit-transition:background 1s;
+}
+.icono4{
+	background-color: rgba(86,175,218,0.6);
+	padding: 3%;
+	font-size: 15px;
+	color: white;
+	border: 4px solid white;
+}
+.icono4:hover{
+	background-color:red;
+	padding: 3%;
+	font-size: 15px;
+	color: white;
+	border: 4px solid white;
+	transition:background 1s;
+	-webkit-transition:background 1s;
+}
+.cuadro2{
+	/*background-color: rgba(94,184,228,0.6); default*/
+	background-color: rgba(86,175,218,0.6);
+}
+.cuadro2:hover{
+	/*background-color: rgba(25,154,217,0.6); default*/
+	/*background-color: rgba(18,145,207,0.6);*/
+	background-color: rgba(17,105,148,0.6);
+	transition:background 1s;
+	-webkit-transition:background 1s;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.banner{
+	width: 100%;
+	height: 120px;
+	margin-bottom: 1%;
+}
+.ps-relativo{
+	position: relative;
+}
+.ps-absoluto{
+	position: absolute;
+	/*left: 0px; top: 0px; height:300px;"*/
+}
+.barra-absoluto{
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 320px;
+	width: 99%;
+	/*left: 0px; top: 200px; width:99%"*/
+}
+.slider{
+	width: 99%;
+	margin: 0px;
+	overflow: hidden;
+}
+.slider ul{
+	display: flex;
+	padding: 0px;
+	width: 400%;
+	animation: cambio 20s infinite alternate;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+	height: 100%;
+}
+.footer{
+	padding: 3px;
+	margin-top: 650px;
+	background-color: rgb(33, 53, 66);
+	color: white;
+}
+.pie{
+	width: 99.9%;
+	margin-left: .1%;
+	margin-top: 2%;
+	background-color: rgb(33, 53, 66);
+	color: white;
+}
+.redes{
+	text-align: right;
+}
+.copy{
+	display: block;
+	text-align: center;
+}
+
+@keyframes cambio{
+	0%{margin-left: 0%}
+	20%{margin-left: 0%}
+
+	25%{margin-left: -100%}
+	45%{margin-left: -100%}
+
+	50%{margin-left: -200%}
+	70%{margin-left: -200%}
+
+	75%{margin-left: -300%}
+	100%{margin-left: -300%}
+}
+
+@media screen and (max-width:400px) {
+			
+			.icono{
+				font-size: 0px;
+				margin-left: 20%;
+				color: white;
+			}
+			ul li{
+				text-align: left;
+			}
+			.navbar{
+				background-color: rgba(255,255,255,0.5);
+				height: 100%;
+			}
+			.barra-absoluto{
+				position: absolute;
+				margin-left: 0px;
+				margin-top: 150px;
+				width: 99%;
+				/*left: 0px; top: 200px; width:99%"*/
+			}
+			.cuadro1{
+				/*background-color: rgba(25,154,217,0.6); default*/
+				background-color: rgba(18,145,207,0.6);
+				border: 2px solid white
+			}
+			.cuadro2{
+				/*background-color: rgba(94,184,228,0.6); default*/
+				background-color: rgba(86,175,218,0.6);
+				border: 2px solid white
+			}
+			.footer{
+				margin-top: 260%;
+			}
+
+		}
